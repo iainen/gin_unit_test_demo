@@ -1,0 +1,11 @@
+.idea
+.vim
+.vscode
+
+tmp/
+
+go.sum
+
+__debug_bin
+
+demo.db
