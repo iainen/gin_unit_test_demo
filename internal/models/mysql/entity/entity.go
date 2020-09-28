@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : entity 描述
-* @date   : 2020-08-17 18:26
- */
-
 package entity
 
 import "time"

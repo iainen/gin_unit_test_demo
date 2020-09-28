@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : model 描述
-* @date   : 2020-08-17 18:27
- */
-
 package model
 
 import (

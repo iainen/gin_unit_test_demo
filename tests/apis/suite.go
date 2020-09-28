@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : tests 描述
-* @date   : 2020-09-21 18:16
- */
-
 package apis
 
 import (

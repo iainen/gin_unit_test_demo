@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : entity 描述
-* @date   : 2020-08-17 18:25
- */
-
 package entity
 
 type User struct {

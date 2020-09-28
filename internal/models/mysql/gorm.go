@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : models 描述
-* @date   : 2020-08-17 16:05
- */
-
 package mysql
 
 import (

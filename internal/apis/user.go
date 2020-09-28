@@ -1,4 +1,3 @@
-// Package apis provides ...
 package apis
 
 import (
@@ -62,5 +61,25 @@ func (u *User) GetUser(c *gin.Context) {
 	}
 
 	c.JSON(0, user)
+	return
+}
+
+func (u *User) ExistUser(c *gin.Context) {
+	name, _ := c.GetQuery("name")
+	if name == "" {
+		c.JSON(http.StatusBadRequest, "bad request")
+		return
+	}
+	ok, err := u.UserI.Exist(name)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, "internal server error")
+		return
+	}
+	if ok {
+		c.JSON(http.StatusOK, "user name exist")
+		return
+	}
+
+	c.JSON(http.StatusOK, "OK")
 	return
 }

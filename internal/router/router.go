@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : router 描述
-* @date   : 2020-08-17 16:31
- */
-
 package router
 
 import (
@@ -57,6 +51,7 @@ func Init(ro *Router) {
 
 	r.POST(UriApiCreateUser, ro.userApi.CreateUser)
 	r.GET(UriApiGetUser, ro.userApi.GetUser)
+	r.GET(UriApiExistUser, ro.userApi.ExistUser)
 }
 
 func Get() *gin.Engine {

@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : gin_demo 描述
-* @date   : 2020-05-07 11:36
- */
-
 package main
 
 import (

@@ -1,4 +1,3 @@
-// Package apis provides ...
 package services
 
 import (

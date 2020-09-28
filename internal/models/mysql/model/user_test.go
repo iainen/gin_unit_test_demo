@@ -1,4 +1,3 @@
-// Package model provides ...
 package model
 
 import (

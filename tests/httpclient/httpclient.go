@@ -1,9 +1,3 @@
-/**
-* @author : yi.zhang
-* @description : api 描述
-* @date   : 2020-09-18 14:01
- */
-
 package httpclient
 
 import (

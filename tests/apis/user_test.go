@@ -1,4 +1,3 @@
-// Package apis provides ...
 package apis
 
 import (
@@ -47,7 +46,6 @@ func (s *ApiSuite) Test_CreateUser() {
 }
 
 func (s *ApiSuite) Test_GetUser() {
-
 	uri := router.UriApiGetUser
 
 	tests := []struct {
@@ -66,8 +64,6 @@ func (s *ApiSuite) Test_GetUser() {
 		URL.RawQuery = params.Encode()
 
 		code, _ := s.httpClient.Get(URL.String())
-		// fmt.Println(string(body), code)
-		// fmt.Println(test.resCode, code)
 
 		assert.Equal(s.T(), test.resCode, code, "http reponse status_code not equal")
 	}
