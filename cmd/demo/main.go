@@ -9,7 +9,6 @@ package main
 import (
 	"demo/internal/models/mysql"
 	"demo/internal/router"
-	"fmt"
 	"net/http"
 	"os"
 
@@ -25,7 +24,6 @@ func init() {
 }
 
 func main() {
-	fmt.Println("main")
 	gin.SetMode("debug")
 
 	r := router.Get()

@@ -3,7 +3,6 @@ package apis
 
 import (
 	"demo/internal/models/mysql/entity"
-	"fmt"
 	"net/http"
 
 	"demo/internal/services"
@@ -24,14 +23,13 @@ func (u *User) CreateUser(c *gin.Context) {
 		c.JSON(http.StatusOK, "err")
 		return
 	}
-	fmt.Println(user)
+
 	if user.UserName == "" {
 		c.JSON(400, "bad request")
 		return
 	}
 
 	ok, err := u.UserI.Exist(user.UserName)
-	fmt.Println(ok, err)
 	if err != nil {
 
 	}
@@ -53,9 +51,7 @@ func (u *User) GetUser(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, "bad request")
 		return
 	}
-	fmt.Println(name)
 	user, err := u.UserI.Get(name)
-	fmt.Println(err)
 	if err == gorm.ErrRecordNotFound {
 		c.JSON(http.StatusNotFound, "not found")
 		return
